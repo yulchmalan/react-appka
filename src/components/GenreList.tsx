@@ -22,9 +22,6 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   if (isLoading) return <GenreListSkeleton />;
   return (
     <>
-      <Heading fontSize={"xl"} mb={3}>
-        Genres
-      </Heading>
       <List>
         {data.map((genre) => (
           <ListItem key={genre.id} paddingY={1}>
